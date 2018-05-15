@@ -1,0 +1,53 @@
+<app-status-bar></app-status-bar>
+
+<h3>Puzzle 5</h3>
+
+<div *ngIf="puzzleStep===0">
+  Click a button:
+  <br>
+  Click the buttons:
+  <br>
+  <div class="row">
+    <div class="col-4">
+      <button class="btn btn-lg btn-primary btn-block mb-4">X</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-primary btn-block mb-4">X</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-primary btn-block mb-4">X</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <button class="btn btn-lg btn-primary btn-block mb-4">X</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-primary btn-block mb-4">X</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-primary btn-block mb-4">X</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-primary btn-block mb-4">X</button>
+    </div>
+    <div class="col-4">
+
+    </div>
+  </div>
+
+  <button (click)="submitAnswer()" class="btn btn-lg btn-primary btn-block mb-4">Submit</button>
+</div>
+
+<div *ngIf="puzzleStep===1">
+  Puzzle Response Success!!!
+  <br>
+  <button routerLink="/m1p6" class="btn btn-lg btn-primary btn-block mb-4">Continue</button>
+</div>

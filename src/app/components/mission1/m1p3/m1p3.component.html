@@ -1,0 +1,54 @@
+<app-status-bar></app-status-bar>
+
+<h3>Puzzle 3</h3>
+
+<div *ngIf="puzzleStep===0">
+  Click some buttons and stuff:
+  <br>
+  <div class="row">
+    <div class="col-4">
+      <button class="btn btn-lg btn-secondary btn-block mb-4">X</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-secondary btn-block mb-4">X</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-secondary btn-block mb-4">X</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <button class="btn btn-lg btn-secondary btn-block mb-4">X</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-secondary btn-block mb-4">X</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-secondary btn-block mb-4">X</button>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="row">
+    <div class="col-6">
+      Some values
+    </div>
+    <div class="col-6">
+      Some more values
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <button (click)="submitAnswer()" class="btn btn-lg btn-primary btn-block mb-4">Submit</button>
+</div>
+
+<div *ngIf="puzzleStep===1">
+  Way to work the numbers! Open Envelopes 2 and 3.
+  <br>
+  <button routerLink="/m1p4" class="btn btn-lg btn-primary btn-block mb-4">Continue</button>
+</div>

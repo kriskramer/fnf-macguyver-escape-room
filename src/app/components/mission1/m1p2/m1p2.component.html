@@ -1,0 +1,52 @@
+<app-status-bar></app-status-bar>
+
+<h3>Puzzle 2</h3>
+
+<div *ngIf="puzzleStep===0">
+  Select the furniture used:
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-4">
+      <button class="btn btn-lg btn-block mb-4" [ngClass]="{ 'btn-primary': !isBtn1Clicked, 'btn-secondary': isBtn1Clicked }" (click)="addSelection(1)">1</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-block mb-4" [ngClass]="{ 'btn-primary': !isBtn2Clicked, 'btn-secondary': isBtn2Clicked }" (click)="addSelection(2)">2</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-block mb-4" [ngClass]="{ 'btn-primary': !isBtn3Clicked, 'btn-secondary': isBtn3Clicked }" (click)="addSelection(3)">3</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <button class="btn btn-lg btn-block mb-4" [ngClass]="{ 'btn-primary': !isBtn4Clicked, 'btn-secondary': isBtn4Clicked }" (click)="addSelection(4)">4</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-block mb-4" [ngClass]="{ 'btn-primary': !isBtn5Clicked, 'btn-secondary': isBtn5Clicked }" (click)="addSelection(5)">5</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-block mb-4" [ngClass]="{ 'btn-primary': !isBtn6Clicked, 'btn-secondary': isBtn6Clicked }" (click)="addSelection(6)">6</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <button class="btn btn-lg btn-block mb-4" [ngClass]="{ 'btn-primary': !isBtn7Clicked, 'btn-secondary': isBtn7Clicked }" (click)="addSelection(7)">7</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-block mb-4" [ngClass]="{ 'btn-primary': !isBtn8Clicked, 'btn-secondary': isBtn8Clicked }" (click)="addSelection(8)">8</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-block mb-4" [ngClass]="{ 'btn-primary': !isBtn9Clicked, 'btn-secondary': isBtn9Clicked }" (click)="addSelection(9)">9</button>
+    </div>
+  </div>
+
+  <button (click)="submitAnswer()" class="btn btn-lg btn-primary btn-block mb-4">Submit</button>
+</div>
+
+<div *ngIf="puzzleStep===1">
+  Great rearranging! Ever thought of interior design as a career? Remove sticker 2 (s-2)!
+  <br>
+  <button routerLink="/m1p3" class="btn btn-lg btn-primary btn-block mb-4">Continue</button>
+</div>

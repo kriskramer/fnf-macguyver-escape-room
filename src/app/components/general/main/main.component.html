@@ -1,0 +1,52 @@
+<div *ngIf="step===0">
+  <h2>Select a mission:</h2>
+
+  <div>
+    <button (click)="selectMission(1)" class="btn btn-lg btn-primary btn-block mb-4">MISSION 1: Underground Lab</button>
+     {{ mctrl.mission1complete ? 'Complete' : '' }}
+  </div>
+  <div>
+    <button (click)="selectMission(2)" class="btn btn-lg btn-primary btn-block mb-4">MISSION 2: Airplane</button>
+    {{ mctrl.mission2complete ? 'Complete' : '' }}
+  </div>
+  <div>
+    <button (click)="selectMission(3)" class="btn btn-lg btn-primary btn-block mb-4">MISSION 3: Factory</button>
+  </div>
+  <div>
+    <button (click)="selectMission(4)" class="btn btn-lg btn-primary btn-block mb-4">MISSION 4: Missle Silo</button>
+  </div>
+  <div>
+    <button (click)="selectMission(5)" class="btn btn-lg btn-primary btn-block">MISSION 5: Grand Finale</button>
+  </div>
+</div>
+
+<div *ngIf="step===1">
+  <h2>Mission {{ mission }} selected</h2>
+
+  <h2>Select a difficulty level:</h2>
+
+  <a href="#" (click)="goBack()">Go Back</a>
+
+  <div>
+    <button (click)="selectDifficulty(1)" class="btn btn-lg btn-primary btn-block mb-4">Easy</button>
+  </div>
+  <div>
+    <button (click)="selectDifficulty(2)" class="btn btn-lg btn-primary btn-block mb-4">Medium</button>
+  </div>
+  <div>
+    <button (click)="selectDifficulty(3)" class="btn btn-lg btn-primary btn-block">Hard</button>
+  </div>
+</div>
+
+<div *ngIf="step===2">
+  <h2>Mission {{ mission }} selected</h2>
+
+  <h2>Difficulty: {{ mctrl.getDifficultyText() }}</h2>
+
+  <a href="#" (click)="goBack()">Go Back</a>
+
+  <h3>Are you ready to proceed?</h3>
+  <div>
+    <button (click)="startMission()" class="btn btn-lg btn-primary btn-block">Let's go!!!</button>
+  </div>
+</div>

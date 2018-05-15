@@ -1,0 +1,46 @@
+/* primary styling */
+h5.my-0 {font-family: 'Iceland'; padding: 0px 20px; font-size: 3.5em; border: 3px solid rgba(0,0,0,.65); width:max-content; margin: auto; margin-bottom: 30px; border-bottom: 1px solid rgba(255, 255, 255, .2); border-right: 1px solid rgba(255, 255, 255, .2); }
+
+
+/* yellow timer */
+h5.my-0{background: #7B4305; color:#FF9D00; text-shadow: 0 0 5.5px #FFBF59;}
+
+/* blue timer */
+h5.my-0{background: #152539; color: #5894AA; text-shadow: 0 0 5.5px #BAD8DF;}
+
+/* red timer */
+h5.my-0{background: #310505; color: #9D1919; text-shadow: 0 0 5.5px #ff3c3c; }
+
+/* green timer */
+h5.my-0{background: #122A06; color:#3A9B45; text-shadow: 0 0 5.5px #88F56A;}
+
+
+/* ADD THE FOLLOWING CLASSES TO CHANGE TIMER COLOR */
+
+.green{background: #122A06; color:#3A9B45; text-shadow: 0 0 5.5px #88F56A;}
+
+.red{background: #310505; text-shadow: 0 0 5.5px #ff3c3c; color: #9D1919;}
+
+.blue{ background: #152539; color: #5894AA; text-shadow: 0 0 5.5px #BAD8DF;}
+
+.yellow{background: #7B4305; color:#FF9D00; text-shadow: 0 0 5.5px #FFBF59;}
+
+.purple{background:#221732; color:#6E31A6; text-shadow: 0 0 5.5px #D07DF2;}
+
+.rose{background:#471028; color:#BF2B67; text-shadow: 0 0 5.5px #F389B4;}
+
+/*.greenLines{background: url('greentexture.jpg'); color:rgba(57,115,36,0.90); text-shadow: 0 0 5.5px #88F56A;} */
+
+
+h4.timerTitle {
+color: rgba(0,0,0,.9);
+text-shadow: -1px -1px 0px rgba(250, 250, 250, .3);
+display: block;
+}
+
+
+@media screen and (max-width: 400px) {
+h5.my-0 {
+font-size: 2.2em;
+}
+}

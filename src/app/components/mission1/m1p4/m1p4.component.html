@@ -1,0 +1,51 @@
+<app-status-bar></app-status-bar>
+
+<h3>Puzzle 4</h3>
+
+<div *ngIf="puzzleStep===0">
+<p>Click the buttons:</p>
+  <br>
+  <div class="row">
+    <div class="col-4">
+      <button class="btn btn-lg btn-primary btn-block mb-4 roundButton">X</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-primary btn-block mb-4 roundButton">X</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-primary btn-block mb-4 roundButton">X</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <button class="btn btn-lg btn-primary btn-block mb-4 roundButton">X</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-primary btn-block mb-4 roundButton">X</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-primary btn-block mb-4 roundButton">X</button>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-4">
+      <button class="btn btn-lg btn-primary btn-block mb-4 roundButton">X</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-primary btn-block mb-4 roundButton">X</button>
+    </div>
+    <div class="col-4">
+      <button class="btn btn-lg btn-primary btn-block mb-4 roundButton">X</button>
+    </div>
+  </div>
+
+  <button (click)="submitAnswer()" class="btn btn-lg btn-primary btn-block mb-4">Submit</button>
+</div>
+
+<div *ngIf="puzzleStep===1">
+<p>Puzzle Response Success!!!</p>
+  <br>
+  <button routerLink="/m1p5" class="btn btn-lg btn-primary btn-block mb-4">Continue</button>
+</div>

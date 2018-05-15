@@ -1,0 +1,17 @@
+<app-status-bar></app-status-bar>
+
+<h3>Puzzle 3</h3>
+
+<div *ngIf="puzzleStep===0">
+  Enter the code:
+  <br>
+  <input type="text" id="inputAnswer" class="form-control" placeholder="Enter code" required autofocus>
+  <br>
+  <button (click)="submitAnswer()" class="btn btn-lg btn-primary btn-block mb-4">Submit</button>
+</div>
+
+<div *ngIf="puzzleStep===1">
+  Puzzle Response Success!!!
+  <br><br>
+  <button routerLink="/m2p4" class="btn btn-lg btn-primary btn-block mb-4">Continue</button>
+</div>

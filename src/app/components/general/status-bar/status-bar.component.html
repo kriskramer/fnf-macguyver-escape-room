@@ -1,0 +1,10 @@
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom box-shadow">
+  Status Bar - Mission: {{ mctrl.mission }}
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  Difficulty: {{ mctrl.getDifficultyText() }}
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  Current Puzzle: {{ mctrl.missionStep }}
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="#" (click)="startOver()">Start Over</a>
+</div>
+
